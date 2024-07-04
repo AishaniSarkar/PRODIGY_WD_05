@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background: linear-gradient(45deg, #003049, #3e7394);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    text-align: center;
+    color: #fff;
+    padding: 40px 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgb(12, 33, 62);
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search>input {
+    color: #555;
+    background-color: #ebfffc;
+    width: 300px;
+    padding: 10px 25px;
+    height: 50px;
+    margin-right: 90px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 5px 10px 10px #06696d;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.search>input:focus {
+    outline: none;
+    width: 400px;
+}
+
+.search>input::placeholder {
+    color: rgba(46, 43, 43, 0.849);
+}
+
+.search>button {
+    border: none;
+    color: #ebfffc;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 10px 10px #06696d;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.search>button:focus{
+    transform:translateY(5px);
+    box-shadow: none;
+}
+
+.search>button>img {
+    width: 15px;
+}
+
+.image img{
+    margin-top: 20px;
+    width: 170px;
+}
+
+.image{
+    margin-bottom: -30px;
+}
+
+.temp{
+    font-size: 70px;
+    font-weight:700;
+}
+
+.city{
+    font-size: 50px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-bottom: -7px;
+}
+
+
